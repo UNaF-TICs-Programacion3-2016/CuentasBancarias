@@ -13,6 +13,10 @@ Public Enum Tipo_Moneda As Byte
     Pesos = 0
     Dolar = 1
 End Enum
+Public Enum Tipo_Cuenta As Byte
+    CA = 0
+    CC = 1
+End Enum
 Public Class Persona
     Private ApellidoyNombre, Dirección As String
     Private CUIL, Teléfono As Integer
@@ -41,4 +45,5 @@ End Class
 Public Class CuentaBancaria
     Private Banco As Banco
     Private CBU, Nro_Cuenta As Integer
+    Private Tipo_Cuenta As Tipo_Cuenta
 End Class
