@@ -22,20 +22,20 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CmbPersonas = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ListBoxCuentasBancarias = New System.Windows.Forms.ListBox()
+        Me.LstCuentasBancarias = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.AgregarCuentaBtn = New System.Windows.Forms.Button()
+        Me.BtnAgregarCuenta = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'CmbPersonas
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(107, 14)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(369, 21)
-        Me.ComboBox1.TabIndex = 0
+        Me.CmbPersonas.FormattingEnabled = True
+        Me.CmbPersonas.Location = New System.Drawing.Point(107, 14)
+        Me.CmbPersonas.Name = "CmbPersonas"
+        Me.CmbPersonas.Size = New System.Drawing.Size(369, 21)
+        Me.CmbPersonas.TabIndex = 0
         '
         'Label1
         '
@@ -46,13 +46,13 @@ Partial Class Form1
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Persona"
         '
-        'ListBoxCuentasBancarias
+        'LstCuentasBancarias
         '
-        Me.ListBoxCuentasBancarias.FormattingEnabled = True
-        Me.ListBoxCuentasBancarias.Location = New System.Drawing.Point(107, 39)
-        Me.ListBoxCuentasBancarias.Name = "ListBoxCuentasBancarias"
-        Me.ListBoxCuentasBancarias.Size = New System.Drawing.Size(369, 160)
-        Me.ListBoxCuentasBancarias.TabIndex = 2
+        Me.LstCuentasBancarias.FormattingEnabled = True
+        Me.LstCuentasBancarias.Location = New System.Drawing.Point(107, 39)
+        Me.LstCuentasBancarias.Name = "LstCuentasBancarias"
+        Me.LstCuentasBancarias.Size = New System.Drawing.Size(369, 160)
+        Me.LstCuentasBancarias.TabIndex = 2
         '
         'Label2
         '
@@ -63,25 +63,25 @@ Partial Class Form1
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Cuentas Bancarias"
         '
-        'AgregarCuentaBtn
+        'BtnAgregarCuenta
         '
-        Me.AgregarCuentaBtn.Location = New System.Drawing.Point(7, 69)
-        Me.AgregarCuentaBtn.Name = "AgregarCuentaBtn"
-        Me.AgregarCuentaBtn.Size = New System.Drawing.Size(94, 46)
-        Me.AgregarCuentaBtn.TabIndex = 4
-        Me.AgregarCuentaBtn.Text = "Agregar Cuenta Bancaria ..."
-        Me.AgregarCuentaBtn.UseVisualStyleBackColor = True
+        Me.BtnAgregarCuenta.Location = New System.Drawing.Point(7, 69)
+        Me.BtnAgregarCuenta.Name = "BtnAgregarCuenta"
+        Me.BtnAgregarCuenta.Size = New System.Drawing.Size(94, 46)
+        Me.BtnAgregarCuenta.TabIndex = 4
+        Me.BtnAgregarCuenta.Text = "Agregar Cuenta Bancaria ..."
+        Me.BtnAgregarCuenta.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(488, 208)
-        Me.Controls.Add(Me.AgregarCuentaBtn)
+        Me.Controls.Add(Me.BtnAgregarCuenta)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ListBoxCuentasBancarias)
+        Me.Controls.Add(Me.LstCuentasBancarias)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.CmbPersonas)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -89,9 +89,9 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CmbPersonas As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents ListBoxCuentasBancarias As ListBox
+    Friend WithEvents LstCuentasBancarias As ListBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents AgregarCuentaBtn As Button
+    Friend WithEvents BtnAgregarCuenta As Button
 End Class
