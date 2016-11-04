@@ -24,28 +24,28 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.PersonaGBox = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TXTTelefono = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TXTDireccion = New System.Windows.Forms.TextBox()
         Me.LblSexo = New System.Windows.Forms.Label()
-        Me.CmbSexo = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TXTCUIL = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TXTAyN = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.BancoLbl = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TXTNroCuenta = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TXTCBU = New System.Windows.Forms.TextBox()
         Me.CancelarCmd = New System.Windows.Forms.Button()
         Me.AceptarCmd = New System.Windows.Forms.Button()
+        Me.CBOSexo = New System.Windows.Forms.ComboBox()
+        Me.CBOMoneda = New System.Windows.Forms.ComboBox()
+        Me.CBOTipo = New System.Windows.Forms.ComboBox()
+        Me.CBOBanco = New System.Windows.Forms.ComboBox()
         Me.PersonaGBox.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,15 +53,15 @@ Partial Class Form2
         'PersonaGBox
         '
         Me.PersonaGBox.Controls.Add(Me.Label4)
-        Me.PersonaGBox.Controls.Add(Me.TextBox4)
+        Me.PersonaGBox.Controls.Add(Me.TXTTelefono)
         Me.PersonaGBox.Controls.Add(Me.Label3)
-        Me.PersonaGBox.Controls.Add(Me.TextBox3)
+        Me.PersonaGBox.Controls.Add(Me.TXTDireccion)
         Me.PersonaGBox.Controls.Add(Me.LblSexo)
-        Me.PersonaGBox.Controls.Add(Me.CmbSexo)
+        Me.PersonaGBox.Controls.Add(Me.CBOSexo)
         Me.PersonaGBox.Controls.Add(Me.Label2)
-        Me.PersonaGBox.Controls.Add(Me.TextBox2)
+        Me.PersonaGBox.Controls.Add(Me.TXTCUIL)
         Me.PersonaGBox.Controls.Add(Me.Label1)
-        Me.PersonaGBox.Controls.Add(Me.TextBox1)
+        Me.PersonaGBox.Controls.Add(Me.TXTAyN)
         Me.PersonaGBox.Location = New System.Drawing.Point(12, 12)
         Me.PersonaGBox.Name = "PersonaGBox"
         Me.PersonaGBox.Size = New System.Drawing.Size(386, 171)
@@ -78,12 +78,12 @@ Partial Class Form2
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Teléfono"
         '
-        'TextBox4
+        'TXTTelefono
         '
-        Me.TextBox4.Location = New System.Drawing.Point(114, 131)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(109, 20)
-        Me.TextBox4.TabIndex = 8
+        Me.TXTTelefono.Location = New System.Drawing.Point(114, 131)
+        Me.TXTTelefono.Name = "TXTTelefono"
+        Me.TXTTelefono.Size = New System.Drawing.Size(109, 20)
+        Me.TXTTelefono.TabIndex = 8
         '
         'Label3
         '
@@ -94,12 +94,12 @@ Partial Class Form2
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Dirección"
         '
-        'TextBox3
+        'TXTDireccion
         '
-        Me.TextBox3.Location = New System.Drawing.Point(114, 102)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox3.TabIndex = 6
+        Me.TXTDireccion.Location = New System.Drawing.Point(114, 102)
+        Me.TXTDireccion.Name = "TXTDireccion"
+        Me.TXTDireccion.Size = New System.Drawing.Size(245, 20)
+        Me.TXTDireccion.TabIndex = 6
         '
         'LblSexo
         '
@@ -110,15 +110,6 @@ Partial Class Form2
         Me.LblSexo.TabIndex = 5
         Me.LblSexo.Text = "Sexo"
         '
-        'CmbSexo
-        '
-        Me.CmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CmbSexo.FormattingEnabled = True
-        Me.CmbSexo.Location = New System.Drawing.Point(114, 75)
-        Me.CmbSexo.Name = "CmbSexo"
-        Me.CmbSexo.Size = New System.Drawing.Size(100, 21)
-        Me.CmbSexo.TabIndex = 4
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -128,12 +119,12 @@ Partial Class Form2
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "CUIL"
         '
-        'TextBox2
+        'TXTCUIL
         '
-        Me.TextBox2.Location = New System.Drawing.Point(114, 49)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(93, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.TXTCUIL.Location = New System.Drawing.Point(114, 49)
+        Me.TXTCUIL.Name = "TXTCUIL"
+        Me.TXTCUIL.Size = New System.Drawing.Size(93, 20)
+        Me.TXTCUIL.TabIndex = 2
         '
         'Label1
         '
@@ -144,40 +135,31 @@ Partial Class Form2
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Apellido y Nombre"
         '
-        'TextBox1
+        'TXTAyN
         '
-        Me.TextBox1.Location = New System.Drawing.Point(114, 23)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.TXTAyN.Location = New System.Drawing.Point(114, 23)
+        Me.TXTAyN.Name = "TXTAyN"
+        Me.TXTAyN.Size = New System.Drawing.Size(245, 20)
+        Me.TXTAyN.TabIndex = 0
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
+        Me.GroupBox1.Controls.Add(Me.CBOMoneda)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Me.CBOTipo)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.CBOBanco)
         Me.GroupBox1.Controls.Add(Me.BancoLbl)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.TXTNroCuenta)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.TXTCBU)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 189)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(386, 160)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cuenta Bancaria"
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(114, 73)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(64, 21)
-        Me.ComboBox3.TabIndex = 13
         '
         'Label8
         '
@@ -197,15 +179,6 @@ Partial Class Form2
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Nro. Cuenta"
         '
-        'ComboBox2
-        '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(114, 46)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(64, 21)
-        Me.ComboBox2.TabIndex = 10
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -214,15 +187,6 @@ Partial Class Form2
         Me.Label5.Size = New System.Drawing.Size(65, 13)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Tipo Cuenta"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(114, 19)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 8
         '
         'BancoLbl
         '
@@ -233,12 +197,12 @@ Partial Class Form2
         Me.BancoLbl.TabIndex = 7
         Me.BancoLbl.Text = "Banco"
         '
-        'TextBox5
+        'TXTNroCuenta
         '
-        Me.TextBox5.Location = New System.Drawing.Point(114, 100)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(153, 20)
-        Me.TextBox5.TabIndex = 6
+        Me.TXTNroCuenta.Location = New System.Drawing.Point(114, 100)
+        Me.TXTNroCuenta.Name = "TXTNroCuenta"
+        Me.TXTNroCuenta.Size = New System.Drawing.Size(153, 20)
+        Me.TXTNroCuenta.TabIndex = 6
         '
         'Label6
         '
@@ -249,12 +213,12 @@ Partial Class Form2
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "CBU"
         '
-        'TextBox6
+        'TXTCBU
         '
-        Me.TextBox6.Location = New System.Drawing.Point(114, 126)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(191, 20)
-        Me.TextBox6.TabIndex = 4
+        Me.TXTCBU.Location = New System.Drawing.Point(114, 126)
+        Me.TXTCBU.Name = "TXTCBU"
+        Me.TXTCBU.Size = New System.Drawing.Size(191, 20)
+        Me.TXTCBU.TabIndex = 4
         '
         'CancelarCmd
         '
@@ -273,6 +237,43 @@ Partial Class Form2
         Me.AceptarCmd.TabIndex = 3
         Me.AceptarCmd.Text = "Aceptar"
         Me.AceptarCmd.UseVisualStyleBackColor = True
+        '
+        'CBOSexo
+        '
+        Me.CBOSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBOSexo.FormattingEnabled = True
+        Me.CBOSexo.Location = New System.Drawing.Point(114, 75)
+        Me.CBOSexo.Name = "CBOSexo"
+        Me.CBOSexo.Size = New System.Drawing.Size(100, 21)
+        Me.CBOSexo.TabIndex = 4
+        '
+        'CBOMoneda
+        '
+        Me.CBOMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBOMoneda.FormattingEnabled = True
+        Me.CBOMoneda.Location = New System.Drawing.Point(114, 73)
+        Me.CBOMoneda.Name = "CBOMoneda"
+        Me.CBOMoneda.Size = New System.Drawing.Size(64, 21)
+        Me.CBOMoneda.TabIndex = 13
+        '
+        'CBOTipo
+        '
+        Me.CBOTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBOTipo.FormattingEnabled = True
+        Me.CBOTipo.Location = New System.Drawing.Point(114, 46)
+        Me.CBOTipo.Name = "CBOTipo"
+        Me.CBOTipo.Size = New System.Drawing.Size(64, 21)
+        Me.CBOTipo.TabIndex = 10
+        '
+        'CBOBanco
+        '
+        Me.CBOBanco.AccessibleName = "CBOBanco"
+        Me.CBOBanco.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBOBanco.FormattingEnabled = True
+        Me.CBOBanco.Location = New System.Drawing.Point(114, 19)
+        Me.CBOBanco.Name = "CBOBanco"
+        Me.CBOBanco.Size = New System.Drawing.Size(100, 21)
+        Me.CBOBanco.TabIndex = 8
         '
         'Form2
         '
@@ -295,26 +296,26 @@ Partial Class Form2
 
     Friend WithEvents PersonaGBox As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TXTAyN As TextBox
     Friend WithEvents LblSexo As Label
-    Friend WithEvents CmbSexo As ComboBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TXTCUIL As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TXTTelefono As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TXTDireccion As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents BancoLbl As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TXTNroCuenta As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents TXTCBU As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents CancelarCmd As Button
     Friend WithEvents AceptarCmd As Button
+    Friend WithEvents CBOSexo As System.Windows.Forms.ComboBox
+    Friend WithEvents CBOMoneda As System.Windows.Forms.ComboBox
+    Friend WithEvents CBOTipo As System.Windows.Forms.ComboBox
+    Friend WithEvents CBOBanco As System.Windows.Forms.ComboBox
 End Class
