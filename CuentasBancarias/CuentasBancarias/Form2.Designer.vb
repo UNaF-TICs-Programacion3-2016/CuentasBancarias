@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form2
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form2
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PersonaGBox = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -43,7 +43,7 @@ Partial Class Form2
         Me.BancoLbl = New System.Windows.Forms.Label()
         Me.TxtNroCuenta = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtCBU = New System.Windows.Forms.TextBox()
+        Me.TxtCBU1 = New System.Windows.Forms.TextBox()
         Me.CancelarCmd = New System.Windows.Forms.Button()
         Me.AceptarCmd = New System.Windows.Forms.Button()
         Me.PersonaGBox.SuspendLayout()
@@ -131,6 +131,7 @@ Partial Class Form2
         'TxtCUIL
         '
         Me.TxtCUIL.Location = New System.Drawing.Point(114, 49)
+        Me.TxtCUIL.MaxLength = 13
         Me.TxtCUIL.Name = "TxtCUIL"
         Me.TxtCUIL.Size = New System.Drawing.Size(93, 20)
         Me.TxtCUIL.TabIndex = 2
@@ -162,7 +163,7 @@ Partial Class Form2
         Me.GroupBox1.Controls.Add(Me.BancoLbl)
         Me.GroupBox1.Controls.Add(Me.TxtNroCuenta)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.txtCBU)
+        Me.GroupBox1.Controls.Add(Me.TxtCBU1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 189)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(386, 160)
@@ -249,12 +250,13 @@ Partial Class Form2
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "CBU"
         '
-        'txtCBU
+        'TxtCBU1
         '
-        Me.txtCBU.Location = New System.Drawing.Point(114, 126)
-        Me.txtCBU.Name = "txtCBU"
-        Me.txtCBU.Size = New System.Drawing.Size(191, 20)
-        Me.txtCBU.TabIndex = 4
+        Me.TxtCBU1.Location = New System.Drawing.Point(114, 126)
+        Me.TxtCBU1.MaxLength = 22
+        Me.TxtCBU1.Name = "TxtCBU1"
+        Me.TxtCBU1.Size = New System.Drawing.Size(189, 20)
+        Me.TxtCBU1.TabIndex = 4
         '
         'CancelarCmd
         '
@@ -312,7 +314,7 @@ Partial Class Form2
     Friend WithEvents BancoLbl As Label
     Friend WithEvents TxtNroCuenta As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents txtCBU As TextBox
+    Friend WithEvents TxtCBU1 As TextBox
     Friend WithEvents CmbMoneda As ComboBox
     Friend WithEvents Label8 As Label
     Friend WithEvents CancelarCmd As Button

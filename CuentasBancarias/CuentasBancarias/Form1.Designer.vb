@@ -88,10 +88,9 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents CmbPersonas As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents LstCuentasBancarias As ListBox
     Friend WithEvents Label2 As Label
     Friend WithEvents BtnAgregarCuenta As Button
+    Public WithEvents CmbPersonas As ComboBox
 End Class
