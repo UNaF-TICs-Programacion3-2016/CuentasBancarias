@@ -22,20 +22,20 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CmbPersonas_Form1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListBoxCuentasBancarias = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.AgregarCuentaBtn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'CmbPersonas_Form1
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(107, 14)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(369, 21)
-        Me.ComboBox1.TabIndex = 0
+        Me.CmbPersonas_Form1.FormattingEnabled = True
+        Me.CmbPersonas_Form1.Location = New System.Drawing.Point(107, 14)
+        Me.CmbPersonas_Form1.Name = "CmbPersonas_Form1"
+        Me.CmbPersonas_Form1.Size = New System.Drawing.Size(369, 21)
+        Me.CmbPersonas_Form1.TabIndex = 0
         '
         'Label1
         '
@@ -81,7 +81,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ListBoxCuentasBancarias)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.CmbPersonas_Form1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -89,7 +89,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CmbPersonas_Form1 As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ListBoxCuentasBancarias As ListBox
     Friend WithEvents Label2 As Label
