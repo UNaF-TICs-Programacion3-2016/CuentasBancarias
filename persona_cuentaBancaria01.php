@@ -5,15 +5,22 @@ class CuentaBancaria{
 	private $Banco;
 	private $Numero_Cuenta;
 	private $CBU;
-	private$Tipo_Cuenta;
+	private $Tipo_Cuenta;
 
-	//agregar cuenta bancaria
-	public function agregarCuentaBancaria($banco,$numero_cuenta,$cbu,$tipoCuenta){
-	  	$this->Banco         = $banco;
-		$this->Numero_Cuenta = $numero_cuenta;
-		$this->CBU           = $cbu;
-		$this->Tipo_Cuenta   = $tipoCuenta;
+	//set atributos
+	public function __construct($banco,$numero_cuenta,$cbu,$tipo_cuenta){
+	  //set atributos
+	  $this->Banco         = $banco;
+	  $this->Numero_Cuenta = $numero_cuenta;
+	  $this->CBU           = $cbu;
+	  $this->Tipo_Cuenta   = $tipo_cuenta;
 	}
+
+	//return  cuentas
+	public function getCuentaBanco(){
+	  	return $this->Banco." - ".$this->Tipo_Cuenta;
+	}
+	
 }
 
 
@@ -23,50 +30,52 @@ class Persona{
 	//atributos de las personas
 	private  $Apellido;
 	private  $Nombre;
-	//private  $datos_persona_array = [{'Nombre':'','Apellido':''}];
-	/*private $Direccion;
-	private $Cuil;
-	private $Telefono;
-	private $Sexo;*/
-	public  $CuentasBancarias; //atributo para la composicion entre las clases
+	private  $Direccion;
+	private  $Cuil;
+	private  $Telefono;
+	private  $Sexo;
+	private  $CuentasBancarias = array(); //atributo para la composicion entre las clases
 
-	//constructores set value a los atributos
-	public function __construct($nombre,$apellido){
-	  $this->Apellido         = $apellido;
-	  $this->Nombre           = $nombre;
-	  $this->CuentasBancarias = array();
+	//metodo set atributos datos de Persona
+	public function registrarDatosPersona($apellido,$nombre,$direccion,$cuil,$telefono,$sexo){
+	  	$this->Apellido  = $apellido;
+		$this->Nombre    = $nombre;
+	   	$this->Direccion = $direccion;
+		$this->Cuil      = $cuil;
+		$this->Telefono  = $telefono;
+		$this->Sexo      = $sexo;		
 	}
 
+	//add cuenta Persona
+	public function agregarCuentaBancaria($banco,$numero_cuenta,$cbu,$tipo_cuenta){	
+		$this->CuentasBancarias[] = new CuentaBancaria($banco,$numero_cuenta,$cbu,$tipo_cuenta);
+	}
 
-	
-	//get datos persona
+	//get cuenta Person
+	public function getCuentasPersona(){
+		foreach($this->CuentasBancarias as $cuentas){
+			echo $cuentas->getCuentaBanco()."\n";
+		}
+	}
+
+	//return array datos Persona
 	public function getDataPersona(){
-		return array('Nombre'=>$this->Nombre,'Apellido'=>$this->Apellido);
+		return array('Apellido'=>$this->Apellido,'Nombre'=>$this->Nombre);
 	}
-
-	public function getCuentasBancarias(){
-	  return  $this->CuentasBancarias;
-	}
+	
 		
 }
 
 //instanciamos persona
-$persona1 = new Persona("Alexis","Qui?onez");
-//cuenta bancaria uno
-$cuenta_bancaria1 = new CuentaBancaria();
-$cuenta_bancaria1->agregarCuentaBancaria('Galicia',212212132132,143433422343421321,'Corriente');
-//agregamos la cuenta
-$persona1->CuentasBancarias[] = $cuenta_bancaria1;
+$oPersona = new Persona();
+//registramos una persona
+$oPersona->registrarDatosPersona('Quionez','Alexis','Ayacucho 23432',213231221332,"3704-1221321","m");
+//registramos cuentas para esa persona
+$oPersona->agregarCuentaBancaria("Hipotecario",2,212321332213132,"Corriente");
+$oPersona->agregarCuentaBancaria("Galicia",3,213123123321132,"Caja de Ahorro");
 
-//add cuenta bancaria dos
-$cuenta_bancaria2 = new CuentaBancaria();
-$cuenta_bancaria2->agregarCuentaBancaria('Banco Formosa',212212132132,143433422343143423,'Caja de ahorro');
-//agregamos la cuenta
-$persona1->CuentasBancarias[] = $cuenta_bancaria2;
-// composicion del objeto
-echo "<pre>";
-print_r($persona1);
-echo "</pre>";
+//vemos como esta compuesto internamente el objeto
+//var_dump($oPersona);
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,13 +92,21 @@ echo "</pre>";
 						<label for="fullname">Personas:</label>
 						<select>
 							<option>
-								Nombre y Apellido
+								<?php
+									foreach($oPersona->getDataPersona() as $datos){
+										echo $datos." ";
+									}
+								?>
 							</option>					
 						</select>
 					</div>
 				<div>
 					<label for="email">Cuentas Bancarias:</label>
-					<textarea></textarea>
+					<textarea>
+					<?php
+						$oPersona->getCuentasPersona();
+					?>
+					</textarea>
 				</div>
 			</form>
 		</body>
